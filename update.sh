@@ -166,7 +166,8 @@ install_fichenx() {
         luci-app-store quickstart luci-app-quickstart luci-app-istorex luci-app-cloudflarespeedtest \
         luci-theme-argon netdata luci-app-netdata lucky luci-app-lucky luci-app-openclash luci-app-homeproxy \
         luci-app-amlogic nikki luci-app-nikki tailscale luci-app-tailscale oaf open-app-filter luci-app-oaf \
-        easytier luci-app-easytier msd_lite luci-app-msd_lite cups luci-app-cupsd
+        easytier luci-app-easytier msd_lite luci-app-msd_lite cups luci-app-cupsd \
+	luci-app-argon-config luci-theme-design luci-app-design-config luci-app-watchcat-plus luci-app-wol
 }
 
 install_feeds() {
