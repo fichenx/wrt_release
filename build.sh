@@ -63,6 +63,11 @@ fi
 make download -j$(($(nproc) * 2))
 make -j$(($(nproc) + 1)) || make -j1 V=s
 
+cd $BASE_PATH/$BUILD_DIR/bin/packages
+tar -zcvf Packages.tar.gz ./*
+cp Packages.tar.gz $BASE_PATH/$BUILD_DIR/bin/targets/
+cd "$BASE_PATH/$BUILD_DIR"
+
 FIRMWARE_DIR="$BASE_PATH/firmware"
 \rm -rf "$FIRMWARE_DIR"
 mkdir -p "$FIRMWARE_DIR"
